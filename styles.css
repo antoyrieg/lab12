@@ -1,0 +1,28 @@
+body {
+	background-image: url("notebook.jpg");
+}
+
+h1 {
+	padding-left: 500px;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+#add {
+    padding-left: 277px;
+}    
+
+#list {
+	padding-left: 277px;
+}	
+
+ul {     
+	font-size: 20px;
+    line-height: 48px;
+    list-style-type: circle;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+#search {
+	padding-left: 277px;
+}	    

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>To Do With Angular</title>
+     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">   
+	<link rel = "stylesheet" type = "text/css" href = "styles.css" />        
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"> </script>
+         <script src="controller.js" charset="utf-8"> </script>
+    </head>
+    <body>
+    	<h1> To Do List </h1>
+<div class="container" ng-app="toDo" ng-controller="toDoController">
+   <div id="add"> 
+    	<label> </label> <input type="text" ng-model="descriptionFromForm" required/>
+   		<button ng-click="addTask()"> <p> Add Task </p> </button>	
+   </div>
+    <div  id="list">
+    	<ul >
+    	<li ng-repeat="task in tasks | filter: taskDescription"> {{ task }} </li>   
+    </ul>  
+    </div>               
+    <div id="search">
+   		 <input type="text" name="search" placeholder="Search To-Do List" ng-model="taskDescription">
+	</div>	
+   
+    </body>
+</html>
